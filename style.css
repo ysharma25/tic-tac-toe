@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000000;
+  display: flex;
+  font-family: Verdana, sans-serif;
+  justify-content: center;
+}
+
+.container {
+  background: #0a3e6e;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 20px;
+  
+} 
+
+.title {
+  text-align: center;
+  color: #abbdee;
+}
+
+.game-grid {
+  background: #0a3e6e;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.game-cell {
+  background:#abbdee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+}
+
+.x, .o {
+  cursor: default;
+}
+
+.status-action {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+  justify-content: space-around;
+  height: 25px;
+  color: #95cfaf;
+}
+
+.x::after {
+  content: 'x';
+  color: #042049;
+  font-size: 180px;
+}
+
+.o::after {
+  content: '○';
+  color: #76517e;
+  font-size: 220px;
+}
+
+.won::after {
+  color: #8a112d;
+}
+
